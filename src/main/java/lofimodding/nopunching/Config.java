@@ -1,4 +1,4 @@
-package lofimodding.gradient;
+package lofimodding.nopunching;
 
 import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.fml.ModLoadingContext;

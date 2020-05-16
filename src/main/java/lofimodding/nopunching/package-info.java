@@ -1,6 +1,6 @@
 @MethodsReturnNonnullByDefault
 @ParametersAreNonnullByDefault
-package lofimodding.gradient;
+package lofimodding.nopunching;
 
 import mcp.MethodsReturnNonnullByDefault;
 
