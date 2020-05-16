@@ -1,0 +1,27 @@
+modLoader="javafml"
+loaderVersion="[31,)"
+issueTrackerURL="https://github.com/lo-fi-modding/no-punching/issues"
+[[mods]]
+modId="no-punching"
+version="${file.jarVersion}"
+displayName="No Punching!"
+#TODO updateJSONURL="https://myurl.me/"
+displayURL="https://github.com/lo-fi-modding/no-punching"
+#TODO logoFile="logo.png"
+credits="Corey Frenette (Monoxide)"
+authors="Corey Frenette"
+description='''
+You might find that a punching bag makes an even better hugging bag if you'd just calm down a little
+'''
+[[dependencies.no-punching]]
+  modId="forge"
+  mandatory=true
+  versionRange="[31.2,)"
+  ordering="NONE"
+  side="BOTH"
+[[dependencies.no-punching]]
+  modId="minecraft"
+  mandatory=true
+  versionRange="[1.15.2]"
+  ordering="NONE"
+  side="BOTH"
