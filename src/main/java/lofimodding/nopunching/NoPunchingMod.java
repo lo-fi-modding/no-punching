@@ -7,6 +7,7 @@ import net.minecraftforge.common.ForgeConfigSpec;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.common.ToolType;
 import net.minecraftforge.event.entity.player.PlayerEvent;
+import net.minecraftforge.fml.ModLoadingContext;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.config.ModConfig;
 import net.minecraftforge.fml.javafmlmod.FMLJavaModLoadingContext;
@@ -50,6 +51,7 @@ public class NoPunchingMod {
 
     this.SERVER_CONFIG = builder.build();
 
+    ModLoadingContext.get().registerConfig(ModConfig.Type.SERVER, this.SERVER_CONFIG);
     MinecraftForge.EVENT_BUS.addListener(this::disablePunching);
     FMLJavaModLoadingContext.get().getModEventBus().addListener(this::onConfigReload);
   }
